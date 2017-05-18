@@ -17,11 +17,27 @@ public class TestTokenizer {
   public void tearDown() throws Exception {
   }
 
-  
+  @Test
+  public void NotNullString2() throws Exception {
+
+  //Comprobar que no quincide contenido del fichero texto_02
+    String strOriginal=TokenizerMain.fileToString("test/texto_02.txt");
+
+    assertNotNull(strOriginal);
+  }
+
+  @Test
+  public void assertEqualsStrings() throws Exception {
+
+  //Comprobar que quincide contenido del fichero texto_01
+    String strOriginal=TokenizerMain.fileToString("test/texto_01.txt");
+    String byText="One can resist the invasion of an army but one cannot resist the invasion of ideas. Victor Hugo";
+    assertEquals(strOriginal, byText);
+  }
 
   @Test
   public void ficheroVacio() throws Exception {
-  //Comprobar si el fichero no est· vacio
+  //Comprobar si el fichero no est√° vacio
    String strOriginal=TokenizerMain.fileToString("test/texto_02.txt");
    boolean same=false;
 
@@ -33,7 +49,7 @@ public class TestTokenizer {
 
   @Test
   public void sameString() throws Exception{
- 
+
   //Comprobar que quincide contenido del fichero texto_01
   	String strOriginal=TokenizerMain.fileToString("test/texto_01.txt");
   	boolean same=false;
@@ -48,7 +64,7 @@ public class TestTokenizer {
 
   @Test
   public void differentString() throws Exception {
- 
+
   //Comprobar que no quincide contenido del fichero texto_01
     String strOriginal=TokenizerMain.fileToString("test/texto_01.txt");
     boolean same=false;
@@ -60,43 +76,33 @@ public class TestTokenizer {
 
     assertFalse(same == true);
   }
-  
+
 
   @Test
   public void NotNullString() throws Exception {
- 
+
   //Comprobar que no quincide contenido del fichero texto_01
     String strOriginal=TokenizerMain.fileToString("test/texto_01.txt");
-
     assertNotNull(strOriginal);
   }
-  
-  @Test
-  public void NotNullString2() throws Exception {
- 
-  //Comprobar que no quincide contenido del fichero texto_01
-    String strOriginal=TokenizerMain.fileToString("test/texto_02.txt");
 
-    assertNotNull(strOriginal);
-  }
-  
-  @Test
-  public void assertEqualsStrings() throws Exception {
- 
-  //Comprobar que no quincide contenido del fichero texto_01
-    String strOriginal=TokenizerMain.fileToString("test/texto_01.txt");
-    String byText="One can resist the invasion of an army but one cannot resist the invasion of ideas. Victor Hugo";
-    assertEquals(strOriginal, byText);
-  }
-  
+
+
   @Test
   public void assertNotEqualsStrings() throws Exception {
- 
+
   //Comprobar que no quincide contenido del fichero texto_01
     String strOriginal=TokenizerMain.fileToString("test/texto_01.txt");
     String byText="In a village of La Mancha, the name of which I have no desire to call to mind.";
     assertNotEquals(strOriginal, byText);
   }
-  
+
+  @Test
+  public void MakeToken() throws Exception {
+  //Comprobar si el array de tockens no este vacio.
+    String[] tokens=TokenizerMain.MakeToken("test/texto_01.txt", new FileInputStream( "models/en-token.model" ));
+    assertNotNull(tokens);
+  }
+
 
 }

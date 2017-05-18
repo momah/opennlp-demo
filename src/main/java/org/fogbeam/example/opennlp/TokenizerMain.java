@@ -21,7 +21,7 @@ import opennlp.tools.util.InvalidFormatException;
 public class TokenizerMain
 {
 	/**
- * Aquí se lee el fichero y se almacena en string
+ * AquÃ­ se lee el fichero y se almacena en string
  * @param args The set of file names.
  * @throws Exception If some files are not found.
  */
@@ -40,9 +40,9 @@ public class TokenizerMain
 		return cadena;
 	}
 
-	public static String[] hacerToken(String cadena,InputStream modelIn) throws InvalidFormatException, IOException{
+	public static String[] MakeToken(String cadena,InputStream modelIn) throws InvalidFormatException, IOException{
 
-		//Aquí se convierte en token
+		//Aquï¿½ se convierte en token
 		TokenizerModel model = new TokenizerModel( modelIn );
 		Tokenizer tokenizer = new TokenizerME(model);
 
@@ -53,8 +53,7 @@ public class TokenizerMain
 
 
 
-	public static void main( String[] args ) throws Exception
-	{
+	public static void main( String[] args ) throws Exception {
 
 		// the provided model
 		// InputStream modelIn = new FileInputStream( "models/en-token.bin" );
