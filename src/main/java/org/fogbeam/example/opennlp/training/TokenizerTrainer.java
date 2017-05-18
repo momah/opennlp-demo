@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 
 package org.fogbeam.example.opennlp.training;
 
@@ -17,8 +20,19 @@ import opennlp.tools.util.PlainTextByLineStream;
 import opennlp.tools.util.TrainingParameters;
 
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class TokenizerTrainer.
+ */
 public class TokenizerTrainer
 {
+	
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 * @throws Exception the exception
+	 */
 	public static void main( String[] args ) throws Exception
 	{
 		Charset charset = Charset.forName( "UTF-8" );

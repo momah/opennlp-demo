@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 
 package org.fogbeam.example.opennlp.training;
 
@@ -17,8 +20,19 @@ import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.PlainTextByLineStream;
 
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class DocumentClassifierTrainer.
+ */
 public class DocumentClassifierTrainer
 {
+	
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 * @throws Exception the exception
+	 */
 	public static void main( String[] args ) throws Exception
 	{
 		DoccatModel model = null;

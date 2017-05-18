@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 package org.fogbeam.example.opennlp;
 
 import java.io.FileInputStream;
@@ -6,9 +9,19 @@ import java.io.InputStream;
 import opennlp.tools.doccat.DoccatModel;
 import opennlp.tools.doccat.DocumentCategorizerME;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class DocumentClassifierMain.
+ */
 public class DocumentClassifierMain
 {
 
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 * @throws Exception the exception
+	 */
 	public static void main( String[] args ) throws Exception
 	{
 		

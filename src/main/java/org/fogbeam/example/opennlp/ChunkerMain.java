@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 
 package org.fogbeam.example.opennlp;
 
@@ -10,8 +13,19 @@ import opennlp.tools.chunker.ChunkerME;
 import opennlp.tools.chunker.ChunkerModel;
 
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class ChunkerMain.
+ */
 public class ChunkerMain
 {
+	
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 * @throws Exception the exception
+	 */
 	public static void main( String[] args ) throws Exception
 	{
 		InputStream modelIn = null;

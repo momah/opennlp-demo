@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 
 package org.fogbeam.example.opennlp;
 
@@ -11,10 +14,18 @@ import opennlp.tools.namefind.TokenNameFinderModel;
 import opennlp.tools.util.Span;
 
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class NameFinderMain.
+ */
 public class NameFinderMain
 {
+	
 	/**
-	 * @param args
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 * @throws Exception the exception
 	 */
 	public static void main( String[] args ) throws Exception
 	{

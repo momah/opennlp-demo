@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 
 package org.fogbeam.example.opennlp;
 
@@ -14,8 +17,19 @@ import opennlp.tools.parser.ParserModel;
 
 
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class ParserMain.
+ */
 public class ParserMain
 {
+	
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 * @throws Exception the exception
+	 */
 	public static void main( String[] args ) throws Exception
 	{
 		InputStream modelIn = new FileInputStream( "models/en-parser-chunking.bin" );

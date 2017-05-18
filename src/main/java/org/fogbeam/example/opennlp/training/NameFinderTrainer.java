@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 
 package org.fogbeam.example.opennlp.training;
 
@@ -16,11 +19,22 @@ import opennlp.tools.util.ObjectStream;
 import opennlp.tools.util.PlainTextByLineStream;
 import opennlp.tools.util.TrainingParameters;
 
+// TODO: Auto-generated Javadoc
 /* NOTE: The training data should contain at least 15000 sentences 
  * to create a model which performs well. */
 
+/**
+ * The Class NameFinderTrainer.
+ */
 public class NameFinderTrainer
 {
+	
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 * @throws Exception the exception
+	 */
 	public static void main( String[] args ) throws Exception
 	{
 		Charset charset = Charset.forName( "UTF-8" );

@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 
 package org.fogbeam.example.opennlp.training;
 
@@ -18,8 +21,18 @@ import opennlp.tools.util.PlainTextByLineStream;
 import opennlp.tools.util.TrainingParameters;
 
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class PartOfSpeechTaggerTrainer.
+ */
 public class PartOfSpeechTaggerTrainer
 {
+	
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 */
 	public static void main( String[] args )
 	{
 		POSModel model = null;
