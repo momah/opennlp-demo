@@ -1,13 +1,12 @@
-
 package org.fogbeam.example.opennlp;
 
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.file.FileVisitOption;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -15,25 +14,33 @@ import opennlp.tools.tokenize.Tokenizer;
 import opennlp.tools.tokenize.TokenizerME;
 import opennlp.tools.tokenize.TokenizerModel;
 
-
+/**
+ * Tokenizer demo.
+ */
 public class TokenizerMain
 {
+  /**
+   * Reads a set of input files from as arguments and tokenizes its contents.
+   * Each token is written to standard output.
+   * @param args The set of file names.
+   * @throws Exception If some files are not found.
+   */
 	public static void main( String[] args ) throws Exception
 	{
 	  if (args.length == 0)
 	  {
-	    System.out.println("Tiene que especificar un conjunto de nombres de archivo que contienen texto.");
+	    System.out.println("You have to specify a set of file names containing plain text.");
 	    return;
 	  }
 
 		// the model we trained
 		InputStream modelIn = new FileInputStream( "models/en-token.model" );
-
+		
 		try
 		{
 			TokenizerModel model = new TokenizerModel(modelIn);
 			Tokenizer tokenizer = new TokenizerME(model);
-
+			
 			for (String fileName: args)
 			{
 			  ArrayList<String> fileTokens = new ArrayList<>();
@@ -46,6 +53,10 @@ public class TokenizerMain
   			    fileTokens.addAll(Arrays.asList(tokens));
   			  }
 			  }
+			  catch (FileNotFoundException e)
+			  {
+			    throw e;
+			  }
 			  finally
 			  {
 			    System.out.println("===== FILE: \"" + fileName + "\" =====");
@@ -53,7 +64,6 @@ public class TokenizerMain
             System.out.println(token);
 			  }
 			}
-
 		}
 		catch( IOException e )
 		{
@@ -72,6 +82,6 @@ public class TokenizerMain
 				}
 			}
 		}
-		System.out.println( "\n-----\nOK" );
+		System.out.println( "\n-----\ndone" );
 	}
 }
