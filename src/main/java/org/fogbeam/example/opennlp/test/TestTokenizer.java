@@ -17,48 +17,40 @@ public class TestTokenizer {
   public void tearDown() throws Exception {
   }
 
-  @Test
-  public void testExistingFiles() {
-    try {
-      TokenizerMain.main(new String[]{"test/texto_01.txt", "test/texto_02.txt"});
-    } catch (Exception e) {
-      fail("This should not throw an Exception");
-    }
-  }
-
+  
 
   @Test
   public void ficheroVacio() throws Exception {
-  //Comprobar si el fichero no está vacio
-   String strOriginal=TokenizerMain.fichero_a_cadena("test/texto_02.txt");
+  //Comprobar si el fichero no est� vacio
+   String strOriginal=TokenizerMain.fileToString("test/texto_02.txt");
    boolean same=false;
 
    if(!strOriginal.isEmpty())
       same=true;
 
-  		assertTrue(same == true);
+  assertTrue(same == true);
   }
 
   @Test
-  public void mismaCadena() throws Exception{
-  @
+  public void sameString() throws Exception{
+ 
   //Comprobar que quincide contenido del fichero texto_01
-  	String strOriginal=TokenizerMain.fichero_a_cadena("test/texto_01.txt");
+  	String strOriginal=TokenizerMain.fileToString("test/texto_01.txt");
   	boolean same=false;
 
-  	String byText="One can resist the invasión of an army but one cannot resist the invasion of ideas. Victor Hugo";
+  	String byText="One can resist the invasion of an army but one cannot resist the invasion of ideas. Victor Hugo";
 
-		if(strOriginal.equals(byText))
-  		same=true;
+	if(strOriginal.equals(byText))
+		same=true;
 
-		assertTrue(same == true);
+	assertTrue(same == true);
 	}
 
   @Test
-  public void mismaCadena() throws Exception {
-    @
+  public void differentString() throws Exception {
+ 
   //Comprobar que no quincide contenido del fichero texto_01
-    String strOriginal=TokenizerMain.fichero_a_cadena("test/texto_01.txt");
+    String strOriginal=TokenizerMain.fileToString("test/texto_01.txt");
     boolean same=false;
 
     String byText="In a village of La Mancha, the name of which I have no desire to call to mind.";
@@ -68,5 +60,43 @@ public class TestTokenizer {
 
     assertFalse(same == true);
   }
+  
+
+  @Test
+  public void NotNullString() throws Exception {
+ 
+  //Comprobar que no quincide contenido del fichero texto_01
+    String strOriginal=TokenizerMain.fileToString("test/texto_01.txt");
+
+    assertNotNull(strOriginal);
+  }
+  
+  @Test
+  public void NotNullString2() throws Exception {
+ 
+  //Comprobar que no quincide contenido del fichero texto_01
+    String strOriginal=TokenizerMain.fileToString("test/texto_02.txt");
+
+    assertNotNull(strOriginal);
+  }
+  
+  @Test
+  public void assertEqualsStrings() throws Exception {
+ 
+  //Comprobar que no quincide contenido del fichero texto_01
+    String strOriginal=TokenizerMain.fileToString("test/texto_01.txt");
+    String byText="One can resist the invasion of an army but one cannot resist the invasion of ideas. Victor Hugo";
+    assertEquals(strOriginal, byText);
+  }
+  
+  @Test
+  public void assertNotEqualsStrings() throws Exception {
+ 
+  //Comprobar que no quincide contenido del fichero texto_01
+    String strOriginal=TokenizerMain.fileToString("test/texto_01.txt");
+    String byText="In a village of La Mancha, the name of which I have no desire to call to mind.";
+    assertNotEquals(strOriginal, byText);
+  }
+  
 
 }
