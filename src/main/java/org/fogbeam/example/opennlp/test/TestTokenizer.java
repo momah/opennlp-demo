@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 package org.fogbeam.example.opennlp.test;
 import static org.junit.Assert.*;
 
@@ -9,19 +12,38 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class TestTokenizer.
+ */
 public class TestTokenizer {
 
+  /**
+   * Sets the up.
+   *
+   * @throws Exception the exception
+   */
   @Before
   public void setUp() throws Exception {
 
   }
 
+  /**
+   * Tear down.
+   *
+   * @throws Exception the exception
+   */
   @After
   public void tearDown() throws Exception {
   }
 
   
 
+  /**
+   * Fichero vacio.
+   *
+   * @throws Exception the exception
+   */
   @Test
   public void ficheroVacio() throws Exception {
   //Comprobar si el fichero no está vacio
@@ -34,6 +56,11 @@ public class TestTokenizer {
   assertTrue(same == true);
   }
 
+  /**
+   * Same string.
+   *
+   * @throws Exception the exception
+   */
   @Test
   public void sameString() throws Exception{
  
@@ -49,6 +76,11 @@ public class TestTokenizer {
 	assertTrue(same == true);
 	}
 
+  /**
+   * Different string.
+   *
+   * @throws Exception the exception
+   */
   @Test
   public void differentString() throws Exception {
  
@@ -65,6 +97,11 @@ public class TestTokenizer {
   }
   
 
+  /**
+   * Not null string.
+   *
+   * @throws Exception the exception
+   */
   @Test
   public void NotNullString() throws Exception {
  
@@ -74,6 +111,11 @@ public class TestTokenizer {
     assertNotNull(strOriginal);
   }
   
+  /**
+   * Not null string 2.
+   *
+   * @throws Exception the exception
+   */
   @Test
   public void NotNullString2() throws Exception {
  
@@ -83,6 +125,11 @@ public class TestTokenizer {
     assertNotNull(strOriginal);
   }
   
+  /**
+   * Assert equals strings.
+   *
+   * @throws Exception the exception
+   */
   @Test
   public void assertEqualsStrings() throws Exception {
  
@@ -92,6 +139,11 @@ public class TestTokenizer {
     assertEquals(strOriginal, byText);
   }
   
+  /**
+   * Assert not equals strings.
+   *
+   * @throws Exception the exception
+   */
   @Test
   public void assertNotEqualsStrings() throws Exception {
  
@@ -101,11 +153,16 @@ public class TestTokenizer {
     assertNotEquals(strOriginal, byText);
   }
   
+  /**
+   * Make token.
+   *
+   * @throws Exception the exception
+   */
   @Test
   public void MakeToken() throws Exception {
 
   //Comprobar que no quincide contenido del fichero texto_01
-    String[] strOriginal=TokenizerMain.MakeToken("test/texto_01.txt", new FileInputStream( "models/en-token.model" ));
+    String[] strOriginal=TokenizerMain.hacerToken("test/texto_01.txt", new FileInputStream( "models/en-token.model" ));
     assertNotNull(strOriginal);
   }
   

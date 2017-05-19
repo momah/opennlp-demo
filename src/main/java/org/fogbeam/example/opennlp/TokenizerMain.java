@@ -1,3 +1,6 @@
+
+
+
 package org.fogbeam.example.opennlp;
 
 
@@ -40,7 +43,7 @@ public class TokenizerMain
 		return cadena;
 	}
 
-	public static String[] MakeToken(String cadena,InputStream modelIn) throws InvalidFormatException, IOException{
+	public static String[] hacerToken(String cadena,InputStream modelIn) throws InvalidFormatException, IOException{
 
 		//Aquí se convierte en token
 		TokenizerModel model = new TokenizerModel( modelIn );
@@ -65,11 +68,11 @@ public class TokenizerMain
 
         //Leemos fichero y transformamos a cadena
         String cadena;
-        cadena=fileToString("ficheroEN");
+        cadena=fileToString("test\\texto_01.txt");
 
 		try
 		{
-        	String[] tokens = MakeToken(cadena,modelIn);
+        	String[] tokens = hacerToken(cadena,modelIn);
 
 		    for( String token : tokens )
 			{
@@ -99,3 +102,4 @@ public class TokenizerMain
 
 
 }
+        
