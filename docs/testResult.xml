@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TestTokenizer" project="opennlp-demo" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="org.fogbean.example.opennlp.test.TestTokenizer" time="0.12">
-    <testcase name="ficheroVacio" classname="org.fogbean.example.opennlp.test.TestTokenizer" time="0.095"/>
-    <testcase name="sameString" classname="org.fogbean.example.opennlp.test.TestTokenizer" time="0.023"/>
-    <testcase name="NotNullString" classname="org.fogbean.example.opennlp.test.TestTokenizer" time="0.085"/>
-    <testcase name="NotNullString2" classname="org.fogbean.example.opennlp.test.TestTokenizer" time="0.098"/>
-    <testcase name="assertEqualsStrings" classname="org.fogbean.example.opennlp.test.TestTokenizer" time="0.025"/>
-    <testcase name="assertNotEqualsStrings" classname="org.fogbean.example.opennlp.test.TestTokenizer" time="0.063"/>
-    <testcase name="MakeToken" classname="org.fogbean.example.opennlp.test.TestTokenizer" time="0.027"/>
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestTokenizer" project="opennlp-demo" tests="8" started="8" failures="0" errors="0" ignored="0">
+  <testsuite name="org.fogbeam.example.opennlp.test.TestTokenizer" time="0.003">
+    <testcase name="sameString" classname="org.fogbeam.example.opennlp.test.TestTokenizer" time="0.001"/>
+    <testcase name="MakeToken" classname="org.fogbeam.example.opennlp.test.TestTokenizer" time="0.0"/>
+    <testcase name="differentString" classname="org.fogbeam.example.opennlp.test.TestTokenizer" time="0.0"/>
+    <testcase name="NotNullString2" classname="org.fogbeam.example.opennlp.test.TestTokenizer" time="0.0"/>
+    <testcase name="ficheroVacio" classname="org.fogbeam.example.opennlp.test.TestTokenizer" time="0.0"/>
+    <testcase name="assertEqualsStrings" classname="org.fogbeam.example.opennlp.test.TestTokenizer" time="0.0"/>
+    <testcase name="NotNullString" classname="org.fogbeam.example.opennlp.test.TestTokenizer" time="0.0"/>
+    <testcase name="assertNotEqualsStrings" classname="org.fogbeam.example.opennlp.test.TestTokenizer" time="0.0"/>
   </testsuite>
 </testrun>
