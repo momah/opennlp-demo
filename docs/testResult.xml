@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TestTokenizer" project="nlp-demo1" tests="2" started="2" failures="0" errors="0" ignored="0">
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestTokenizer" project="opennlp-demo" tests="2" started="2" failures="0" errors="0" ignored="0">
   <testsuite name="org.fogbean.example.opennlp.test.TestTokenizer" time="0.12">
     <testcase name="ficheroVacio" classname="org.fogbean.example.opennlp.test.TestTokenizer" time="0.095"/>
     <testcase name="sameString" classname="org.fogbean.example.opennlp.test.TestTokenizer" time="0.023"/>
