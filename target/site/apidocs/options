@@ -1,0 +1,24 @@
+-classpath
+'C:/WINDOWS/system32/config/systemprofile/.m2/repository/org/apache/opennlp/opennlp-tools/1.5.3/opennlp-tools-1.5.3.jar;C:/WINDOWS/system32/config/systemprofile/.m2/repository/org/apache/opennlp/opennlp-maxent/3.0.3/opennlp-maxent-3.0.3.jar;C:/WINDOWS/system32/config/systemprofile/.m2/repository/net/sf/jwordnet/jwnl/1.3.3/jwnl-1.3.3.jar;C:/WINDOWS/system32/config/systemprofile/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;C:/WINDOWS/system32/config/systemprofile/.m2/repository/junit/junit/4.11/junit-4.11.jar'
+-encoding
+'Cp1252'
+-protected
+-sourcepath
+'C:/Program Files (x86)/Jenkins/workspace/opennlp-demo/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2017. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Program Files (x86)/Jenkins/workspace/opennlp-demo/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'opennlp-demo 0.0.1-SNAPSHOT API'
+-linkoffline
+'http://docs.oracle.com/javase/7/docs/api' 'C:/Program Files (x86)/Jenkins/workspace/opennlp-demo/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'opennlp-demo 0.0.1-SNAPSHOT API'
